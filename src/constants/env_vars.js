@@ -6,7 +6,8 @@ const
   withJSX = args.includes('--jsx'),
   withPkg = (args.includes('--pkg')) || (args.includes('-p')),
   es5 = args.includes('--es5'),
-  isEntry = args.includes('--entry');
+  isEntry = args.includes('--entry'),
+  isStyl = args.includes('--styl');
 
 
 // Make variables accessible globally
@@ -15,5 +16,6 @@ export {
   withJSX,
   withPkg,
   es5,
-  isEntry
+  isEntry,
+  isStyl
 }
